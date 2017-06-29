@@ -1,0 +1,11 @@
+#!/bin/bash
+
+at now+2minutes -f ./script1.bash
+
+tail -n 0 -f ~/report.tmp
+
+3.Задайте запуск скрипта из пункта 1 каждые 5 минут каждого часа в день недели, в который вы будете выполнять работу.
+
+#!/bin/bash
+
+echo "*/5 * * * 2 script1.bash" | crontab

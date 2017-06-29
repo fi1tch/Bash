@@ -1,0 +1,19 @@
+#!/bin/bash
+
+nice -n 6 ./script4dop.bash&
+
+nice -n 0 ./script4dop.bash&
+
+Дополнительный файл script4dop.bash:
+
+#!/bin/bash
+
+x=0
+
+while true;
+
+do
+
+let x=$x+1
+
+done
